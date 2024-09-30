@@ -19,7 +19,7 @@ st.divider()
 
 # Input fields
 repo_owner = st.text_input("Repository Owner", "netfone")
-repo_name = st.text_input("Repository Name", "")
+repo_name = st.text_input("Repository Name", "terrain_web")
 branch_name = st.text_input("Branch Name", "develop")
 start_date = st.date_input("Start Date", datetime.now().replace(day=1))
 end_date = st.date_input("End Date", datetime.now())
