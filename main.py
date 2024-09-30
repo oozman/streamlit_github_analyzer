@@ -1,11 +1,10 @@
-import streamlit as st
-from github import Github
-from datetime import datetime
-import pytz
 import os
+from datetime import datetime
+
+import streamlit as st
 from dotenv import load_dotenv
 
-from entities.analyze_github_repo import AnalyzeGithubRepo, AnalyzeGithubRepoResult
+from entities.analyze_github_repo import AnalyzeGithubRepo
 
 # Load environment variables
 load_dotenv()
@@ -26,8 +25,8 @@ end_date = st.date_input("End Date", datetime.now())
 
 # Use environment variable for access token, with an option to override
 default_token = os.getenv("GITHUB_ACCESS_TOKEN", "")
-#access_token = st.text_input("GitHub Access Token (optional)", value=default_token, type="password")
-#access_token = access_token or default_token  # Use input if provided, otherwise use env var
+# access_token = st.text_input("GitHub Access Token (optional)", value=default_token, type="password")
+# access_token = access_token or default_token  # Use input if provided, otherwise use env var
 
 access_token = default_token
 
