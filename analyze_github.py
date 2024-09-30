@@ -13,7 +13,7 @@ load_dotenv()
 st.set_page_config(initial_sidebar_state="collapsed")
 
 st.subheader("Repo Analyzer")
-st.text("This analyzes lines and commits in a specific GitHub repo, returning total lines added and commits during a period.")
+st.text("Analyzes lines and commits, returning total lines added, commits.")
 
 st.divider()
 
