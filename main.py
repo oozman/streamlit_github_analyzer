@@ -2,12 +2,8 @@ import os
 from datetime import datetime
 
 import streamlit as st
-from dotenv import load_dotenv
 
 from entities.analyze_github_repo import AnalyzeGithubRepo
-
-# Load environment variables
-load_dotenv()
 
 st.set_page_config(initial_sidebar_state="collapsed")
 
